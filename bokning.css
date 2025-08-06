@@ -24,6 +24,7 @@ form select {
   border-radius: 4px;
   font-size: 1rem;
   width: 100%;
+  outline: none;
 }
 
 form button {
@@ -43,8 +44,8 @@ form button:hover {
 }
 
 #confirmationMessage {
-  background-color: #e6ffe6;
-  border: 1px solid #b2f0b2;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #0e0f0f;
   padding: 25px;
   max-width: 600px;
   margin: 40px auto;
@@ -52,7 +53,7 @@ form button:hover {
   text-align: center;
 }
 header.hero {
-  background-image: url('imgHeder/header-clean.jpg');
+  /*  background-image: url('imgHeder/header-clean.jpg'); */
   background-size: cover;
   background-position: center;
   height: 40vh;

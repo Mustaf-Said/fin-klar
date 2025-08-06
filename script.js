@@ -1,3 +1,7 @@
+
+(function () {
+  emailjs.init("S5uNuqfCCLANObzq8"); // Ersätt med din public key
+})();
 document.getElementById("bookingForm").addEventListener("submit", (e) => {
   e.preventDefault();
 
