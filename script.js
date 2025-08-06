@@ -1,4 +1,4 @@
-document.getElementById("bookingForm").addEventListener("submit", function (e) {
+document.getElementById("bookingForm").addEventListener("submit", (e) => {
   e.preventDefault();
 
   document.getElementById("loadingMessage").style.display = "block"; // Visa spinner
@@ -30,4 +30,16 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
       document.getElementById("bookingForm").style.display = "block";
       document.getElementById("loadingMessage").style.display = "none";
     });
+});
+// header content toogle
+document.addEventListener('DOMContentLoaded', function () {
+  const heroContent = document.querySelector('.hero-content');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 0) {
+      heroContent.classList.add('hide-on-scroll');
+    } else {
+      heroContent.classList.remove('hide-on-scroll');
+    }
+  });
 });
